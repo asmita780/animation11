@@ -1,0 +1,58 @@
+
+/* css varible................ */
+:root{
+    --primary-color: yellow;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    border: 2px solid var(--primary-color);
+    background-color: #E7E9EB;;
+
+    
+}
+
+div{
+    width: 100px;
+    height: 40px;
+    border: 2px solid gray;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+h1{
+    position: relative;
+    bottom: 350px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+h1{animation-timing-function: linear;}
+
+#div-1 {animation-timing-function: linear;}
+#div-2{animation-timing-function: ease;}
+#div-3{animation-timing-function: ease-in;}
+#div-4{animation-timing-function: ease-out;}
+#div-5{animation-timing-function: ease-in-out;}
+
+
+@keyframes example{
+    from {left: 0px;}
+    to {left: 300px;}
+}
